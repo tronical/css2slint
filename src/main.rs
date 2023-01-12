@@ -77,7 +77,7 @@ fn main() -> std::io::Result<()> {
     println!("export global CSSVariableValues := {{");
     println!("    property<CSSVariables> values: {{");
     for (property_name, property_value) in var_names.iter().zip(var_values) {
-        println!("    {}: {},", property_name, property_value);
+        println!("        {}: {},", property_name, property_value);
     }
     println!("    }};");
     println!("}}");
